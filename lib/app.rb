@@ -9,6 +9,8 @@ get '/secret' do
     "You've reached the end of the internet....or is it just the beginning?"
 end
 
-get '/route' do
-    "Or have you now reached it? You'll never know."
+get '/cat' do
+   "<div style='border: 3px dashed red'>
+    <img src='https://i.imgur.com/jFaSxym.png'>
+    </div>"
 end
