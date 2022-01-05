@@ -9,7 +9,13 @@ get '/secret' do
     "You've reached the end of the internet....or is it just the beginning?"
 end
 
-get '/cat' do
-@name = ["Amigo", "Misty", "Almond"].sample
-   erb :index 
+get '/random-cat' do
+  @name = ["Amigo", "Misty", "Almond"].sample
+  erb :index 
+end
+
+get '/named-cat' do
+  p params
+  @name = params[:name]  
+  erb :index
 end
